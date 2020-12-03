@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spotify True Shuffle</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="/favicon/site.webmanifest" />
+		<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#00aba9" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+	<body>
+		<a class="header-logo" href="https://elijahcirioli.com"></a>
+		<div id="text">
+			<p id="title">True Spotify Shuffle</p>
+			<p id="description">Hold down on a playlist to arrange it in actual random order.</p>
+		</div>
+		<a
+			id="login-button"
+			class="button"
+			href="https://accounts.spotify.com/authorize?client_id=c9627896375f476da8323bb7efad644f&redirect_uri=https:%2F%2Felijahcirioli.com%2Ftrueshuffle&scope=user-read-private%20user-read-email%20playlist-read-collaborative%20playlist-read-private%20playlist-modify-private%20playlist-modify-public&response_type=token&state=123"
+			>Sign in</a
+		>
+		<div id="playlist-wrap"></div>
+		<div id="disclaimer-wrap">
+			<p id="disclaimer">Okay, it's not truly random but it's better than the alternative.</p>
+		</div>
+		<div id="shield"></div>
+		<script src="shuffle.js"></script>
+	</body>
+</html>
